@@ -1,0 +1,103 @@
+* 
+{
+    top: 0;
+    left: 0;
+    user-select: none;
+}
+
+body
+{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: radial-gradient(#767676 2%, transparent 2%);
+    background-color: black;
+    background-size: 100px 100px;
+    overflow: hidden;
+}
+
+#sig
+{
+    font-size: 75%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    transform: translate(-25%,-25%) rotate(-90deg);
+}
+
+#notice
+{
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+}
+
+#cLogo
+{
+    fill: white;
+    height: 22%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    width: 22%;
+}
+
+.circle
+{
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#outerCircle, #middleCircle, #innerCircle, #logoCircle
+{
+    animation: rotateCircle 240s linear infinite;
+    
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(540deg);
+    }
+}
+
+circle
+{
+    fill: black;
+    stroke-width: 0.2;
+}
+
+#outerCircle
+{
+    height: 1000px;
+    width: 1000px;
+    stroke: #767676;
+}
+
+#middleCircle
+{
+    height: 950px;
+    width: 950px;
+    stroke: #b8b8b8;
+}
+
+#innerCircle
+{
+    height: 900px;
+    width: 900px;
+    stroke: #ffffff;
+}
+
+.dotted {
+    stroke-dasharray: 0, 3.7;
+    stroke-linecap: round;
+}
